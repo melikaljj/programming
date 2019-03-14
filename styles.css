@@ -1,0 +1,63 @@
+* {
+  /*Reset padding, margin and border on all elements*/
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  overflow: hidden;
+}
+/* positions both canvases and styles track*/
+canvas {
+  border-bottom: 3px solid #d6b4e7;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* Positions refresh button on top*/
+#refresh {
+  z-index: 2;
+}
+/*Styles both buttons*/
+button {
+  position: relative;
+  text-decoration: none;
+  border: #70dbdb 3px solid;
+  text-align: center;
+  background-color: transparent;
+  margin: auto;
+  z-index: 1;
+  font-family: "verdana", "Arial Narrow", Arial, sans-serif;
+  padding: 10px;
+  border-radius: 20px;
+  color: white;
+  font-size: 2rem;
+}
+/*Hover color of both buttons*/
+button:hover {
+  background-color: #70dbdb;
+}
+/*Takes away ugly fokus color*/
+button:focus {
+  outline: none;
+}
+/*Positions particle canvas*/
+#graphics {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+/*Position restart button*/
+.moverefresh {
+  position: fixed;
+  bottom: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+/*Theme button positioning*/
+#themeButton {
+  margin: 7vh;
+  width: 15vh;
+  font-size: 1.5rem;
+}

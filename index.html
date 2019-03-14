@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Getting canvas -->
+    <canvas id="graphics"> </canvas>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+
+  <!-- Starts game -->
+  <body onload="startGame()">
+
+    <!-- Refresh Button -->
+    <div class="moverefresh">
+      <button onclick="javascript:location.reload(true)" id="refresh">
+        START OVER
+      </button>
+    </div>
+
+    <!-- Theme Button -->
+    <button onclick="toggleTheme()" id="themeButton">LIGHT</button>
+
+    <!-- Load javascript -->
+    <script src="./main.js"></script>
+  </body>
+</html>
